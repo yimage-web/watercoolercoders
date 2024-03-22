@@ -1,22 +1,19 @@
 import React from 'react';
 
 const Card = ({ title, content }) => (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-6">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base">{content}</p>
-    </div>
+
+        <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+            <p className="font-normal text-gray-700 dark:text-gray-400">{content}</p>
+        </a>
+
 );
 
-const CardsContainer = ({ cards }) => (
-    <div className="flex flex-wrap justify-around">
-        {cards.map((card, index) => (
-            <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-            <Card title={card.title} content={card.content} />
-            </div>
-        ))}
+const CardsContainer = (card) => (
+    <div className="">
+        <Card title={card.title} content={card.content} />
     </div>
+
 );
 
 export default CardsContainer;
-
-  

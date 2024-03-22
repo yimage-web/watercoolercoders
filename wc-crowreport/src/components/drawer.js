@@ -23,7 +23,7 @@ const DrawerMenu = () => {
   };
 
   return (
-    <div className="bg-slate-700 w-full">
+    <div className="bg-slate-800 w-full">
       <ul className="flex flex-row justify-center items-center gap-x-8 space-y-2">
         {menuItems.map((item, index) => (
           <li key={item.topic} className="relative ">

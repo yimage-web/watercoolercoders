@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
+import Footer from './components/footer';
 import Home from './pages/home';
 import TopicPage from './pages/TopicPage';
 import './App.css'; // Tailwind CSS import
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/topic/:topicId" element={<TopicPage />} />
           {/* ... other routes */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
