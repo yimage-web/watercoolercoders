@@ -49,7 +49,7 @@ const DrawerMenu = () => {
             <div className="h-1 bg-black w-full"></div>
             {/* Subtopic drawer */}
             {activeIndex === index && (
-              <ul ref={ref} className="flex flex-row start absolute top-full left-0 min-w-max bg-slate-700 overflow">
+              <ul ref={ref} className="absolute top-full left-0 min-w-max bg-slate-700">
                 {item.subTopics.map((subTopic) => (
                   <li key={subTopic} className="py-2 px-4 hover:bg-gray-500">
                     {subTopic}

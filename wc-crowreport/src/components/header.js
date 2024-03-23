@@ -20,8 +20,9 @@ const Header = () => {
                 </div>
 
                 <div className='flex flex-col col-span-1 items-center mt-4 mb-4 space-y-4'>
-                    <button className=' px-6 py-2 rounded-md  bg-cyan-900 hover:bg-cyan-800 login-button'>Login</button>
+                    
                     <button className="px-3 py-2 rounded-md border-cyan-800 border-2 hover:bg-cyan-700 hover:text-white  text-cyan-800 sign-up-button">Sign Up</button>
+                    <button className=' px-6 py-2 rounded-md  bg-cyan-900 hover:bg-cyan-800 login-button'>Login</button>
                 </div>
             </div>
             <DrawerMenu/>
