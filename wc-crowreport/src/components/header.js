@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header className="bg-white text-white pb-4">
-            <div className="container mx-auto flex justify-between items-center px-4">
+            <div className="container mx-auto flex justify-between gap-8 items-center px-4">
                 <div className="flex items-end space-x-4">
                     <img Link="/" src={crowLogo} alt="Logo" className="py-2 h-24 w-24" /> {/* Replace with your logo */}
                   

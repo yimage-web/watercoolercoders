@@ -18,9 +18,10 @@ const CarouselComponent = ({ images }) => {
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="px-4">
-            <div className="h-40 flex justify-center items-center">
-              <img src={img} alt={`Slide ${index}`} className="w-full h-auto block" />
-            </div>
+              <a className="h-40 flex justify-center items-center"href={img.link}>
+                <img  src={img.img} alt={`Slide ${index}`} className="w-full h-auto block" />
+              </a>
+            
           </div>
         ))}
       </Slider>
