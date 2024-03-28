@@ -4,8 +4,6 @@ import crowLogo from '../assets/crowLogo.svg';
 import DrawerMenu from './drawer';  
 
 const Header = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
     return (
         <header className="bg-white text-white pb-4">
